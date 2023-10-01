@@ -1,0 +1,53 @@
+﻿<?php
+    $a = $_POST["s1"];
+    //echo "你購買的產品是".$a;
+
+?>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+
+    <title>北科大陳擎文</title>
+  </head>
+  <body>
+    <h1 class="text-center">北科大陳擎文，作業9</h1>
+    <div class="container">
+        <div class="row">
+            <a class="btn bg-danger text-light col-2 offset-1" href="index.html">首頁</a>
+            <a class="btn bg-warning col-2 offset-1" href="a1.html">第一題</a>
+            <a class="btn bg-primary text-light col-2 offset-1" href="a2.html">第二題</a>
+            <a class="btn bg-success text-light col-2 offset-1" href="a3.html">第三題</a>
+        </div>
+    </div>
+    <hr>
+    <form method="post" action="p9-3.php">
+      <select name="s1">
+        <option <?php if($a=='請選擇想購買的產品')echo 'selected';  ?>>請選擇想購買的產品</option>
+        <option <?php if($a=='蘋果')echo 'selected';  ?> >蘋果</option>
+        <option <?php if($a=='柳丁')echo 'selected';  ?>>柳丁</option>
+        <option <?php if($a=='香蕉')echo 'selected';  ?>>香蕉</option>
+      </select>
+      <input type="submit" value="購買">
+
+    </form>
+    <h2 class="text-danger">你購買的產品是：<?php echo $a; ?></h2>
+     
+  </body>
+</html>

@@ -1,0 +1,19 @@
+﻿
+<div id="header" class="container" style="background-color:royalblue;color:white;">
+	<h1 class="text-center">傳回雲端主機，計算加法</h1>
+</div>
+
+<div class="container" style="margin-top:50px;">
+
+ <form method="post" action="" class="form-inline">
+  <div class="form-group">
+    <input type="text" name="" class="form-control" placeholder="數字1">
+	＋
+    <input type="text" name="" class="form-control" placeholder="數字2">
+	＝
+    <input type="text" name="" class="form-control" placeholder="數字3">
+  </div>
+  <button type="submit" class="btn btn-danger">雲端計算</button>
+ </form>
+
+</div>

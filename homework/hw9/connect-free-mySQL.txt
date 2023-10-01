@@ -1,0 +1,8 @@
+﻿主機: sql12.freesqldatabase.com
+資料庫名稱: sql12624444
+帳號: sql12624444
+密碼: pfqqf9xZTE
+Port number: 3306
+資料表：books
+
+https://www.freesqldatabase.com/

@@ -1,0 +1,26 @@
+﻿<?php    
+    $str = $_POST["包裹"];
+
+    //讀取資料表，4個步驟：
+
+    //1.連線資料庫
+    $conn = new mysqli("主機","帳號","密碼","資料庫");
+    $conn->set_charset('utf8');
+
+    //2.查詢資料表
+    $result = $conn->query("select * from 資料表  where 欄位 = '".$str."'");
+
+    
+    //3.輸出全部資料
+    $rowall = $result->fetch_all(MYSQLI_ASSOC);
+    foreach($rowall as $item)
+    {
+        echo "<br>".$item["欄位"].'，'.$item["欄位"];
+    }        
+
+    
+    //4.關閉連線：close connect
+    $conn->close();
+
+
+?>
